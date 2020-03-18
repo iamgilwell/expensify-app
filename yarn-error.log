@@ -1,0 +1,33 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add babel-preset-react@6.24.1 babel-preset-env@1.5.2
+
+PATH: 
+  /home/gilwell/anaconda3/bin:/home/gilwell/anaconda3/condabin:/home/gilwell/anaconda3/bin:/home/gilwell/.npm-global/bin:/home/gilwell/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/dart/bin:/home/gilwell/Android/Sdk/emulator:/home/gilwell/Android/Sdk/tools:/home/gilwell/Android/Sdk/tools/bin:/home/gilwell/Android/Sdk/platform-tools:/home/gilwell/flutter/bin:/home/gilwell/Android/Sdk/emulator:/home/gilwell/Android/Sdk/tools:/home/gilwell/Android/Sdk/tools/bin:/home/gilwell/Android/Sdk/platform-tools:/home/gilwell/flutter/bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  12.16.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: connect ENETUNREACH 2606:4700::6810:1523:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16)
+
+npm manifest: 
+  {
+    "name": "indecision-app",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Gilwell Muhati",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
