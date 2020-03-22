@@ -1,8 +1,19 @@
+const obj = {
+  name: "Vikram",
+  getName() {
+    return this.name;
+  }
+};
+
+const getName = obj.getName.bind({ name: "Andrew" });
+
+console.log(getName());
+
 class IndecisionApp extends React.Component {
   render() {
-    const title = 'Indecision';
-    const subtitle = 'Put yout life in the hands of a computer';
-    const options = ['Thing One', 'Thing Two', 'Thing Four'];
+    const title = "Indecision";
+    const subtitle = "Put yout life in the hands of a computer";
+    const options = ["Thing One", "Thing Two", "Thing Four"];
     return (
       <div>
         <Header title={title} subtitle={subtitle} />
@@ -27,7 +38,7 @@ class Header extends React.Component {
 
 class Actionn extends React.Component {
   handlePick() {
-    alert('HandlePick');
+    alert("HandlePick");
   }
   render() {
     return (
@@ -39,8 +50,14 @@ class Actionn extends React.Component {
 }
 
 class Options extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleRemoveAll = this.handleRemoveAll.bind(this);
+  }
   handleRemoveAll() {
-    alert('Remove All');
+    console.log(this.props.options);
+
+    // alert('Remove All');
   }
   render() {
     return (
@@ -77,7 +94,7 @@ class AddOption extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleAddOption}>
-          <input type='text' name='option' />
+          <input type="text" name="option" />
           <button>Add Option</button>
         </form>
       </div>
@@ -85,4 +102,6 @@ class AddOption extends React.Component {
   }
 }
 
-ReactDOM.render(<IndecisionApp />, document.getElementById('app'));
+ReactDOM.render(<IndecisionApp />, document.getElementById("app"));
+
+// NEXT - 14. Build It Adding State to VisibilityToggle
