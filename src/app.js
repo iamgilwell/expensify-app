@@ -1,2 +1,11 @@
-console.log('App .JS is Running!!');
-// Next ES6 Import/ Export
+// install -> import -> use;
+import React from 'react';
+import ReactDOM from 'react-dom';
+import IndecisionApp from './components/IndecisionApp';
+
+import 'normalize.css/normalize.css';
+import './styles/styles.scss';
+
+
+ReactDOM.render(<IndecisionApp />, document.getElementById("app"));
+
