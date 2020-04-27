@@ -9,3 +9,5 @@ import './styles/styles.scss';
 
 ReactDOM.render(<IndecisionApp />, document.getElementById("app"));
 
+// media/gilwell / Windows / Tutorials / First Quarter / REACT / The Complete React Developer Course(w Hooks and Redux) / 8. Styling React
+// 10. Mobile Considerations.mp4
