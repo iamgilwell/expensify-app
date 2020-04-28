@@ -1,11 +1,49 @@
 // install -> import -> use;
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
+const ExpenseDashBoardPage = () => (
+    <div>
+        This is from my dashboard compoenent
+    </div>
+)
 
-ReactDOM.render(<p>This is My Boilder Plate</p>, document.getElementById("app"));
+const AddExpensePage = () => (
+    <div>
+        This is from my add expense compoenent
+    </div>
+)
 
-// media/gilwell / Windows / Tutorials / First Quarter / REACT / The Complete React Developer Course(w Hooks and Redux) / 8. Styling React
-// 10. Mobile Considerations.mp4
+const EditExpensePage = () => (
+    <div>
+        This is from my Edit expense compoenent
+    </div>
+)
+
+const HelpExpensePage = () => (
+    <div>
+        This is from my Help expense compoenent
+    </div>
+)
+
+
+
+const routes = (
+    <BrowserRouter>
+        <div>
+            <Route path="/" component={ExpenseDashBoardPage} exact={true} />
+            <Route path="/create" component={AddExpensePage} />
+            <Route path="/edit" component={EditExpensePage} />
+            <Route path="/help" component={HelpExpensePage} />
+        </div>
+
+    </BrowserRouter>
+)
+
+ReactDOM.render(routes, document.getElementById("app"));
+
+/// media/gilwell/Windows/Tutorials/First Quarter/REACT/The Complete React Developer Course (w Hooks and Redux)/9. React-Router
+// 5. Setting up a 404.mp4
