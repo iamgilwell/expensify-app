@@ -31,3 +31,9 @@
     color: $off-white;
     padding: 0;
 }
+
+@media(min-width: $desktop-breakpoint) {
+    .big-button {
+        margin-bottom: $xl-size;
+    }
+}
